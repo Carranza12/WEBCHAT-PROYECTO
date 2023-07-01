@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>WEBCHAT - PROYECTO</title>
+</head>
+<body>
+    <main id="chat_container" class="chat_container">
+        <section id="allMessages" class="allMessages">
+        </section>
+        <section id="input_message_container" class="input_message_container">
+            <input type="text" placeholder="Escribe tu mensaje..." 
+            class="input_message_text" id="messageInput">
+        </section>
+    </main>
+    <script>
+        const messagesDatabase = <%-JSON.stringify(data)%>;
+        
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+   
+</body>
+</html>
